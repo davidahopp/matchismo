@@ -29,6 +29,7 @@
     _cardButtons = cardButtons;
     for(UIButton *cardButton in self.cardButtons){
         Card *card = [self.deck drawRandomCard];
+        [cardButton setTitle:card.contents forState:UIControlStateSelected];
     }
 }
 
